@@ -23,9 +23,5 @@ namespace Projekt
         {
             
         }
-        public override void Buff()
-        {
-            
-        }
     }
 }

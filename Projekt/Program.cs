@@ -16,15 +16,13 @@ namespace Projekt
             System.Console.WriteLine("[Press ENTER to continue]");
             Console.ReadLine();
             Console.Clear();
-            
-            /*Linus toadLinus = new Linus();
-            System.Console.WriteLine(toadLinus.GetHp());*/
 
-            Character Player = new Character();
+            Character player = new Character();
+
             System.Console.WriteLine("What should your fighters name be?");
-            Player.SetName(Console.ReadLine());
+            player.SetName(Console.ReadLine());
 
-            System.Console.WriteLine(Player.GetName() + ".. The name of a mighty warrior.");
+            System.Console.WriteLine(player.GetName() + ".. The name of a mighty warrior.");
             System.Console.WriteLine("[Press ENTER to continue]");
             Console.ReadLine();
             Console.Clear();
@@ -49,8 +47,6 @@ namespace Projekt
 
             Console.Clear();
 
-            Character player = new Character();
-
             if (playerInput == "1")
             {
                 player = new Mosquito();
@@ -63,12 +59,6 @@ namespace Projekt
             {
                 player = new Moth();
             }
-
-            //casper hjälpte mig lösa problemet
-
-            //problem uppstod, jag vet inte hur jag ska kunna skapa och skriva kod till instanser av subklasser om jag
-            //inte vet vilken subklass spelaren ska använda...
-            
             
             Console.ReadLine();
         }

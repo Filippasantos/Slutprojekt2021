@@ -31,9 +31,5 @@ namespace Projekt
         {
             return buff; //här också
         }
-        public virtual void Buff()
-        {
-            
-        }
     }
 }
