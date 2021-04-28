@@ -9,9 +9,13 @@ namespace Projekt
         public Mosquito()
         {
             SetHp(75);
+            SetBuff("Annoying");
         }
-        public int Attack()
+        public int Attack(int hitP)
         {
+            hitP = generator.Next(15, 25);
+            System.Console.WriteLine("The proboscis of the mosquito stings a bit..");
+            Console.ReadLine();
             return hitpoints;
         }
         public void BuffActive()

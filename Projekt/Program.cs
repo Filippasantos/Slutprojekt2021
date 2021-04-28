@@ -20,6 +20,15 @@ namespace Projekt
             /*Linus toadLinus = new Linus();
             System.Console.WriteLine(toadLinus.GetHp());*/
 
+            Character Player = new Character();
+            System.Console.WriteLine("What should your fighters name be?");
+            Player.SetName(Console.ReadLine());
+
+            System.Console.WriteLine(Player.GetName() + ".. The name of a mighty warrior.");
+            System.Console.WriteLine("[Press ENTER to continue]");
+            Console.ReadLine();
+            Console.Clear();
+
             System.Console.WriteLine("Choose your fighter..");
             System.Console.WriteLine("1. Mosquito");
             System.Console.WriteLine("2. Fly");
@@ -40,18 +49,23 @@ namespace Projekt
 
             Console.Clear();
 
-            /*if (playerInput == "1")
+            Character player = new Character();
+
+            if (playerInput == "1")
             {
-                Mosquito mosquito = new Mosquito();
+                player = new Mosquito();
             }
             else if (playerInput == "2")
             {
-                Fly fly = new Fly();
+                player = new Fly();
             }
             else if (playerInput == "3")
             {
-                Moth moth = new Moth();
-            }*/ 
+                player = new Moth();
+            }
+
+            //casper hjälpte mig lösa problemet
+
             //problem uppstod, jag vet inte hur jag ska kunna skapa och skriva kod till instanser av subklasser om jag
             //inte vet vilken subklass spelaren ska använda...
             

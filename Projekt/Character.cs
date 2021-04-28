@@ -9,7 +9,7 @@ namespace Projekt
         private string buff;
         public void SetHp(int newHp)
         {
-
+            hp = newHp;
         }
         public int GetHp()
         {
@@ -23,13 +23,17 @@ namespace Projekt
         {
             return name;
         }
-        public void SetBuff()
+        public void SetBuff(string buffSetter)
         {
-            //lista ut vad som ska in
+            buff = buffSetter;
         }
         public string GetBuff()
         {
             return buff; //här också
+        }
+        public virtual void Buff()
+        {
+            
         }
     }
 }
