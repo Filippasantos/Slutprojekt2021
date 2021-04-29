@@ -12,11 +12,9 @@ namespace Projekt
             SetHp(100);
             SetBuff("Clumsy");
         }
-        public int Attack(int hitP)
+        public override int Attack()
         {
-            hitP = generator.Next(15, 25);
-            System.Console.WriteLine("It is clumsy, but does some damage..");
-            Console.ReadLine();
+            hitpoints = generator.Next(15, 25);
             return hitpoints;
         }
         public void BuffActive()

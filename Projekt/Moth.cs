@@ -12,11 +12,9 @@ namespace Projekt
             SetHp(125);
             SetBuff("Adorable");
         }
-        public int Attack(int hitP)
+        public override int Attack()
         {
-            hitP = generator.Next(5, 15);
-            System.Console.WriteLine("The dusty wings doesn't do much damage..");
-            Console.ReadLine();
+            hitpoints = generator.Next(5, 15);
             return hitpoints;
         }
         public void BuffActive()

@@ -6,9 +6,10 @@ namespace Projekt
     {
         private int hp;
         private int hitpoints;
+        private string name;
         private Random generator = new Random();
 
-        protected void SetHp(int newHp)
+        public void SetHp(int newHp)
         {
             hp = newHp;
         }
@@ -16,9 +17,17 @@ namespace Projekt
         {
             return hp;
         }
-        public int AttackEnemy(int hitP)
+        public void SetName(string enemyName)
         {
-            hitP = generator.Next(5, 25);
+            name = enemyName;
+        }
+        public string GetName()
+        {
+            return name;
+        }
+        public int AttackEnemy()
+        {
+            hitpoints = generator.Next(5, 25);
             return hitpoints;
         }
     }

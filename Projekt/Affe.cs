@@ -9,7 +9,8 @@ namespace Projekt
 
         public Affe()
         {
-
+            SetHp(75);
+            SetName("Affe");
         }
         public void BuffActive()
         {

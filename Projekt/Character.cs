@@ -31,5 +31,14 @@ namespace Projekt
         {
             return buff;
         }
+        public void ActivateBuff()
+        {
+            
+        }
+
+        public virtual int Attack()
+        {
+            return 0;
+        }
     }
 }

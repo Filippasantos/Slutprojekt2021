@@ -9,7 +9,8 @@ namespace Projekt
 
         public Linus()
         {
-            SetHp(200);
+            SetHp(100);
+            SetName("Linus");
         }
         public void BuffActive()
         {

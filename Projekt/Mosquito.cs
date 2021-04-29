@@ -11,11 +11,9 @@ namespace Projekt
             SetHp(75);
             SetBuff("Annoying");
         }
-        public int Attack(int hitP)
+        public override int Attack()
         {
-            hitP = generator.Next(15, 25);
-            System.Console.WriteLine("The proboscis of the mosquito stings a bit..");
-            Console.ReadLine();
+            hitpoints = generator.Next(15, 25);
             return hitpoints;
         }
         public void BuffActive()
