@@ -59,6 +59,12 @@ namespace Projekt
             {
                 player = new Moth();
             }
+
+            //fighting part
+
+            System.Console.WriteLine("It's time..");
+            System.Console.WriteLine("TO FIGHT!");
+            System.Console.WriteLine("[Press ENTER to continue]");
             
             Console.ReadLine();
         }

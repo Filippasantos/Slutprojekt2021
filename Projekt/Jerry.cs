@@ -4,14 +4,14 @@ namespace Projekt
 {
     public class Jerry : Toads
     {
-        private string buff;
+        private string buff = "Sticky";
         private Random generator = new Random();
 
         public Jerry()
         {
 
         }
-        public void SetBuff()
+        public void BuffActive()
         {
             
         }

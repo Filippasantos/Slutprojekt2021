@@ -4,8 +4,9 @@ namespace Projekt
 {
     public class Toads
     {
-        private int hp = 100;
-        private string name;
+        private int hp;
+        private int hitpoints;
+        private Random generator = new Random();
 
         protected void SetHp(int newHp)
         {
@@ -14,6 +15,11 @@ namespace Projekt
         public int GetHp()
         {
             return hp;
+        }
+        public int AttackEnemy(int hitP)
+        {
+            hitP = generator.Next(5, 25);
+            return hitpoints;
         }
     }
 }

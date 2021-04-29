@@ -29,7 +29,7 @@ namespace Projekt
         }
         public string GetBuff()
         {
-            return buff; //här också
+            return buff;
         }
     }
 }
