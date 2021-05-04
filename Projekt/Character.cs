@@ -33,7 +33,7 @@ namespace Projekt
         }
         public void ActivateBuff()
         {
-            
+            //hann inte
         }
 
         public virtual int Attack()

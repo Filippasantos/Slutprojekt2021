@@ -18,7 +18,7 @@ namespace Projekt
         }
         public void BuffActive()
         {
-
+            //hann inte
         }
     }
 }

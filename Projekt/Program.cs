@@ -66,12 +66,9 @@ namespace Projekt
 
             System.Console.WriteLine("It's time..");
             System.Console.WriteLine("TO FIGHT!");
-            System.Console.WriteLine("[Press ENTER to continue]");
 
             Toads fighter = toadsArray[generator.Next(toadsArray.Length)];
 
-            System.Console.WriteLine(fighter.GetName());
-            Console.ReadLine();
             System.Console.WriteLine(player.GetName() + " begins!");
             System.Console.WriteLine(player.GetName() + " has " + player.GetHp() + " hp!");
             System.Console.WriteLine(fighter.GetName() + " has " + fighter.GetHp() + " hp!");
@@ -81,7 +78,6 @@ namespace Projekt
 
             int fighterDamage;
             int playerDamage;
-            string game = "notOver";
 
             while (player.GetHp() > 0 && fighter.GetHp() > 0)
             {
@@ -101,19 +97,19 @@ namespace Projekt
             }
 
             if (fighter.GetHp() == 0 || fighter.GetHp() < 0)
-                {
-                    System.Console.WriteLine("Congrats!");
-                    System.Console.WriteLine(player.GetName() + " wins!");
-                    System.Console.WriteLine("[Press ENTER to close]");
-                    Console.ReadLine();
-                }
-                else if (player.GetHp() == 0 || player.GetHp() < 0)
-                {
-                    System.Console.WriteLine("You lose!");
-                    System.Console.WriteLine(fighter.GetName() + " wins!");
-                    System.Console.WriteLine("[Press ENTER to close]");
-                    Console.ReadLine();
-                }
+            {
+                System.Console.WriteLine("Congrats!");
+                System.Console.WriteLine(player.GetName() + " wins!");
+                System.Console.WriteLine("[Press ENTER to close]");
+                Console.ReadLine();
+            }
+            else if (player.GetHp() == 0 || player.GetHp() < 0)
+            {
+                System.Console.WriteLine("You lose!");
+                System.Console.WriteLine(fighter.GetName() + " wins!");
+                System.Console.WriteLine("[Press ENTER to close]");
+                Console.ReadLine();
+            }
         }
     }
 }
